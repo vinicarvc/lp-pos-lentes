@@ -1,0 +1,836 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  padding: 80px 150px;
+}
+
+.leftside h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ff9100;
+}
+
+.leftside h1 {
+  font-size: 64px;
+  font-weight: 700;
+  width: 558px;
+  margin-top: 20px;
+  color: #01597f;
+}
+
+.leftside p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #969696;
+  margin-top: 20px;
+}
+
+.leftside-btns {
+  display: flex;
+  margin-top: 20px;
+  gap: 30px;
+  align-items: center;
+}
+
+.leftside-btns button {
+  background-color: #ff9100;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leftside-btns button a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.leftside-btns .play-video-btn {
+  color: #ff9100;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #ff9100;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  justify-content: space-between; /* Espaço entre o texto e os cards */
+  align-items: center; /* Alinha o conteúdo ao topo */
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 40px 150px;
+}
+
+/* Seção de texto à esquerda */
+.text-section {
+  flex: 3; /* Aumenta o espaço do texto */
+  margin-right: 40px; /* Espaço entre o texto e os cards */
+}
+
+.text-section h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.text-section p {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #969696;
+  font-weight: 400;
+}
+
+/* Seção dos cards à direita */
+/* Seção dos cards */
+.cards-container {
+  display: flex;
+  justify-content: space-between; /* Distribui os cards com espaço entre eles */
+  gap: 20px; /* Espaçamento entre os cards */
+  flex: 2; /* Ajusta a largura dos cards */
+}
+
+/* Estilo dos cards */
+.card {
+  background-color: #01597f;
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  width: 250px; /* Reduz o tamanho dos cards */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribui o conteúdo dentro do card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave de movimento e sombra */
+}
+
+/* Hover do card (subir) */
+.card:hover {
+  transform: translateY(-10px); /* Move o card para cima */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar o efeito de elevação */
+}
+
+/* Ícone do card */
+.card-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 auto 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: #ff9100;
+}
+
+/* Título do card */
+.card-heading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Texto do card */
+.card-text {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Botão do card */
+.card-button {
+  background-color: #ff9100;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-button:hover {
+  background-color: #e0a800;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  padding: 80px 150px;
+  gap: 60px;
+  background-color: #01597f;
+}
+
+.about img {
+  width: 558px;
+  height: 576px;
+}
+
+.rightside-about h2 {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ff9100;
+}
+
+.rightside-about h1 {
+  font-size: 64px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.rightside-about p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #dddddd;
+}
+
+.rightside-about-numbers {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.numbers :nth-child(1) {
+  color: #ff9100;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Contêiner geral do testimonial */
+.testimonial-container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.testimonial-container h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+/* Contêiner para os depoimentos lado a lado */
+.testimonials {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 150px;
+  gap: 20px; /* Espaçamento entre os cards */
+}
+
+/* Estilo dos cards de depoimento */
+.testimonial-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 48%; /* Cada card ocupa 48% da largura disponível */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Informações do cliente (foto, nome, cargo) */
+.testimonial-info {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.testimonial-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.testimonial-name {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+.testimonial-position {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Estilo das estrelas de avaliação */
+.testimonial-rating {
+  margin-top: 10px;
+}
+
+.star {
+  color: #ff9100; /* Cor das estrelas */
+  font-size: 18px; /* Tamanho das estrelas */
+  margin-right: 2px; /* Espaçamento entre as estrelas */
+}
+
+/* Texto do depoimento */
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.form {
+  background-color: #01597f;
+  padding: 40px 150px;
+}
+/* Estilos da div de inscrição */
+.signup-container {
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup-container h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.signup-container p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Estilos do formulário */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #ff9100;
+  outline: none;
+}
+
+.signup-btn {
+  background-color: #ff9100;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+  background-color: #e07a00;
+}
+
+.qrcode {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 150px;
+  background-color: #002c3f;
+  color: #ffffff;
+}
+
+.qrcode p {
+  width: 45%;
+  font-size: 40px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.orange {
+  color: #ff9100;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px;
+  }
+
+  .leftside h1 {
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .leftside p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .leftside-btns {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .rightside img {
+    max-width: 400px;
+    margin-top: 20px;
+  }
+}
+
+/* ------------------------------ MEDIA QUERIES ------------------------------ */
+
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 40px;
+  }
+
+  .leftside h1 {
+    font-size: 48px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .leftside p {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .leftside-btns {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .rightside img {
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .text-section {
+    margin-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .text-section h2 {
+    font-size: 32px;
+  }
+
+  .text-section p {
+    font-size: 16px;
+  }
+
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 40px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-heading {
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 13px;
+  }
+
+  .about {
+    flex-direction: column;
+    padding: 60px 30px;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    margin-bottom: 30px;
+  }
+
+  .rightside-about h1 {
+    font-size: 48px;
+  }
+
+  .rightside-about p {
+    font-size: 16px;
+  }
+
+  .rightside-about-numbers {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .numbers p:nth-child(1) {
+    font-size: 22px;
+  }
+
+  .numbers p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .testimonial-container h2 {
+    font-size: 30px;
+  }
+
+  .testimonial-text {
+    font-size: 15px;
+  }
+
+  .testimonials {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .testimonial-card {
+    width: 48%; /* 2 cards per row */
+  }
+
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial-name {
+    font-size: 16px;
+  }
+
+  .testimonial-position {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .leftside h1 {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .leftside p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .leftside-btns {
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .rightside img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+
+  .text-section h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .text-section p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card-heading {
+    font-size: 18px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    margin-bottom: 30px;
+  }
+
+  .rightside-about h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  .rightside-about p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .rightside-about-numbers {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .numbers p:nth-child(1) {
+    font-size: 20px;
+  }
+
+  .numbers p:nth-child(2) {
+    font-size: 14px;
+  }
+
+  .testimonial-container h2 {
+    font-size: 28px;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+
+  .testimonial-card {
+    width: 100%; /* 1 card per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 30px 10px;
+  }
+
+  .leftside h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .leftside p {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .leftside-btns {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+  }
+
+  .rightside img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .container {
+    padding: 20px 10px;
+  }
+
+  .text-section h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .text-section p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .card-heading {
+    font-size: 16px;
+  }
+
+  .card-text {
+    font-size: 12px;
+  }
+
+  .about {
+    padding: 30px 15px;
+  }
+
+  .about img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    margin-bottom: 20px;
+  }
+
+  .rightside-about h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .rightside-about p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .rightside-about-numbers {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .numbers p:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .numbers p:nth-child(2) {
+    font-size: 12px;
+  }
+
+  .testimonial-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .testimonial-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .testimonial-name {
+    font-size: 16px;
+  }
+
+  .testimonial-position {
+    font-size: 12px;
+  }
+
+  .testimonial-text {
+    font-size: 13px;
+  }
+
+  .star {
+    font-size: 16px;
+  }
+
+  .qrcode {
+    padding: 20px 20px;
+  }
+
+  .qrcode p {
+    font-size: 20px;
+  }
+
+  .qrcode img {
+    width: 230px;
+  }
+
+  .form {
+    padding: 40px 0;
+  }
+}
