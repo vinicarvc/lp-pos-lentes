@@ -23,7 +23,8 @@
 .leftside h1 {
   font-size: 64px;
   font-weight: 700;
-  width: 558px;
+  line-height: 1.4;
+  width: 650px;
   margin-top: 20px;
   color: #01597f;
 }
@@ -71,20 +72,34 @@
   background-color: transparent;
 }
 
+.saibamais-btn:hover {
+  background-color: #01597f;
+}
+
+.play-video-btn:hover {
+  background-color: #01597f;
+  border: 1px solid #01597f;
+  color: white;
+}
+
+.rightside img {
+  max-width: 38rem;
+}
+
 /* Container principal */
 .container {
   display: flex;
-  justify-content: space-between; /* Espaço entre o texto e os cards */
-  align-items: center; /* Alinha o conteúdo ao topo */
+  justify-content: space-between;
+  align-items: center;
   max-width: 1440px;
   margin: 0 auto;
   padding: 40px 150px;
 }
 
-/* Seção de texto à esquerda */
 .text-section {
-  flex: 3; /* Aumenta o espaço do texto */
-  margin-right: 40px; /* Espaço entre o texto e os cards */
+  flex: 3;
+  margin-right: 40px;
+  color: #01597f;
 }
 
 .text-section h2 {
@@ -99,37 +114,32 @@
   font-weight: 400;
 }
 
-/* Seção dos cards à direita */
-/* Seção dos cards */
 .cards-container {
   display: flex;
-  justify-content: space-between; /* Distribui os cards com espaço entre eles */
-  gap: 20px; /* Espaçamento entre os cards */
-  flex: 2; /* Ajusta a largura dos cards */
+  justify-content: space-between;
+  gap: 20px;
+  flex: 2;
 }
 
-/* Estilo dos cards */
 .card {
   background-color: #01597f;
   color: #fff;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
-  width: 250px; /* Reduz o tamanho dos cards */
+  width: 250px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribui o conteúdo dentro do card */
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito suave de movimento e sombra */
+  justify-content: space-between;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover do card (subir) */
 .card:hover {
-  transform: translateY(-10px); /* Move o card para cima */
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2); /* Aumenta a sombra para dar o efeito de elevação */
+  transform: translateY(-10px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Ícone do card */
 .card-icon {
   display: flex;
   justify-content: center;
@@ -148,21 +158,18 @@
   fill: #ff9100;
 }
 
-/* Título do card */
 .card-heading {
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
-/* Texto do card */
 .card-text {
   font-size: 14px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
 
-/* Botão do card */
 .card-button {
   background-color: #ff9100;
   color: #fff;
@@ -187,8 +194,8 @@
 }
 
 .about img {
-  width: 558px;
-  height: 576px;
+  width: 500px;
+  height: 500px;
 }
 
 .rightside-about h2 {
@@ -228,7 +235,6 @@
   font-weight: 700;
 }
 
-/* Contêiner geral do testimonial */
 .testimonial-container {
   width: 80%;
   max-width: 1200px;
@@ -240,24 +246,22 @@
 .testimonial-container h2 {
   font-size: 32px;
   margin-bottom: 40px;
-  color: #333;
+  color: #01597f;
 }
 
-/* Contêiner para os depoimentos lado a lado */
 .testimonials {
   display: flex;
   justify-content: space-between;
   padding: 40px 150px;
-  gap: 20px; /* Espaçamento entre os cards */
+  gap: 20px;
 }
 
-/* Estilo dos cards de depoimento */
 .testimonial-card {
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  width: 48%; /* Cada card ocupa 48% da largura disponível */
+  width: 48%;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -268,7 +272,6 @@
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Informações do cliente (foto, nome, cargo) */
 .testimonial-info {
   margin-bottom: 20px;
   text-align: left;
@@ -285,7 +288,7 @@
 .testimonial-name {
   font-weight: bold;
   font-size: 18px;
-  color: #333;
+  color: #01597f;
 }
 
 .testimonial-position {
@@ -293,107 +296,83 @@
   color: #666;
 }
 
-/* Estilo das estrelas de avaliação */
 .testimonial-rating {
   margin-top: 10px;
 }
 
 .star {
-  color: #ff9100; /* Cor das estrelas */
-  font-size: 18px; /* Tamanho das estrelas */
-  margin-right: 2px; /* Espaçamento entre as estrelas */
+  color: #ff9100;
+  font-size: 18px;
+  margin-right: 2px;
 }
 
-/* Texto do depoimento */
 .testimonial-text {
   font-size: 16px;
   line-height: 1.5;
   color: #555;
 }
 
-.form {
-  background-color: #01597f;
-  padding: 40px 150px;
-}
-/* Estilos da div de inscrição */
-.signup-container {
-  width: 80%;
-  max-width: 600px;
-  margin: 40px auto;
-  padding: 30px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-.signup-container h2 {
-  font-size: 28px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.signup-container p {
-  font-size: 16px;
-  color: #666;
-  margin-bottom: 20px;
-}
-
-/* Estilos do formulário */
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.form-group {
-  width: 100%;
-  margin-bottom: 15px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 14px;
-  color: #333;
-}
-
-input {
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-input:focus {
-  border-color: #ff9100;
-  outline: none;
-}
-
-.signup-btn {
+.testimonial-btn {
   background-color: #ff9100;
   color: #fff;
-  padding: 12px 25px;
+  font-size: 20px;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
   font-weight: bold;
-  transition: background-color 0.3s;
+  text-decoration: none;
+  margin-top: 30px;
 }
 
-.signup-btn:hover {
-  background-color: #e07a00;
+.testimonial-btn:hover {
+  background-color: #01597f;
+}
+
+.whatsapp-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 25px;
+  transition: box-shadow 0.3s ease;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.whatsapp-icon {
+  background-color: #25d366;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  margin-right: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: filter 0.3s ease;
+}
+
+.whatsapp-text {
+  color: #fff;
+  font-size: 1.3rem;
+  transition: filter 0.3s ease;
+}
+
+.whatsapp-link:hover .whatsapp-icon,
+.whatsapp-link:hover .whatsapp-text {
+  filter: brightness(0.7) saturate(1.5);
 }
 
 .qrcode {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 10px 150px;
+  padding: 10px 100px;
   background-color: #002c3f;
   color: #ffffff;
 }
@@ -441,6 +420,11 @@ input:focus {
     max-width: 400px;
     margin-top: 20px;
   }
+}
+
+.fa-solid {
+  color: #ff9100;
+  font-size: 2rem;
 }
 
 /* ------------------------------ MEDIA QUERIES ------------------------------ */
@@ -563,7 +547,7 @@ input:focus {
   }
 
   .testimonial-card {
-    width: 48%; /* 2 cards per row */
+    width: 48%;
   }
 
   .testimonial-img {
@@ -687,7 +671,7 @@ input:focus {
   }
 
   .testimonial-card {
-    width: 100%; /* 1 card per row */
+    width: 100%;
   }
 }
 
@@ -795,6 +779,7 @@ input:focus {
   .testimonial-card {
     width: 100%;
     padding: 15px;
+    margin-bottom: 30px;
   }
 
   .testimonial-img {
@@ -820,10 +805,13 @@ input:focus {
 
   .qrcode {
     padding: 20px 20px;
+    flex-wrap: wrap;
   }
 
   .qrcode p {
     font-size: 20px;
+    width: 70%;
+    text-align: center;
   }
 
   .qrcode img {
